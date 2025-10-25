@@ -13,6 +13,7 @@
 # limitations under the License.
 import logging
 import termcolor
+import json
 import time
 import os
 import sys
@@ -71,6 +72,77 @@ PLAYWRIGHT_KEY_MAP = {
     "command": "Meta",  # 'Meta' is Command on macOS, Windows key on Windows
 }
 
+RECORDED = []
+
+recorder_js = r"""
+(() => {
+  // helper: build a simple selector for an element
+  function simpleSelector(el) {
+    if (!el) return null;
+    if (el.id) return `#${el.id}`;
+    let tag = el.tagName.toLowerCase();
+    let cls = el.className ? '.' + el.className.trim().split(/\s+/).join('.') : '';
+    return tag + cls;
+  }
+
+  function send(action) {
+    try {
+      // call the binding exposed by Python: window.__recorder
+      // Playwright will make this available as the name you exposed.
+      window.__recorder(action);
+    } catch (e) {
+      console.warn("Recorder binding not available", e);
+    }
+  }
+
+  // record clicks
+  document.addEventListener('click', (e) => {
+    const el = e.target;
+    const action = {
+      type: 'click',
+      selector: simpleSelector(el),
+      text: el.innerText ? el.innerText.slice(0, 200) : '',
+      timestamp: Date.now()
+    };
+    send(action);
+  }, true);
+
+  // record fills (typing)
+  document.addEventListener('change', (e) => {
+  const el = e.target;
+  if (!(el instanceof HTMLInputElement || el instanceof HTMLTextAreaElement)) return;
+  const action = {
+    type: 'fill',
+    selector: simpleSelector(el),
+    value: el.value,
+    timestamp: Date.now()
+  };
+  send(action);
+  }, true);
+
+  // record form submit
+  document.addEventListener('submit', (e) => {
+    const form = e.target;
+    const action = {
+      type: 'submit',
+      selector: simpleSelector(form),
+      timestamp: Date.now()
+    };
+    send(action);
+  }, true);
+
+  // record navigation events (before unload)
+  window.addEventListener('beforeunload', () => {
+    send({ type: 'navigation', timestamp: Date.now() });
+  });
+})();
+"""
+
+async def recorder_handler(source, payload):
+    payload['_received_at'] = time.time()
+    RECORDED.append(payload)
+    print("RECORDED:", json.dumps(payload, ensure_ascii=False))
+    return "ok"
 
 class PlaywrightComputer(Computer):
     """Connects to a local Playwright instance."""
@@ -120,6 +192,13 @@ class PlaywrightComputer(Computer):
             }
         )
         self._page = self._context.new_page()
+
+        # Expose a binding named "__recorder" callable from page JS
+        self._context.expose_binding("__recorder", lambda source, payload: recorder_handler(source, payload))
+
+        # Ensure recorder is injected on every new page / navigation
+        self._context.add_init_script(recorder_js)
+
         self._page.goto(self._initial_url)
 
         self._context.on("page", self._handle_new_page)
@@ -132,6 +211,10 @@ class PlaywrightComputer(Computer):
         return self
 
     def __exit__(self, exc_type, exc_val, exc_tb):
+        # save recorded actions
+        with open("recorded_actions.json", "w", encoding="utf-8") as f:
+            json.dump(RECORDED, f, ensure_ascii=False, indent=2)
+
         if self._context:
             self._context.close()
         try:
