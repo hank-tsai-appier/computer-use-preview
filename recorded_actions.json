@@ -1,0 +1,382 @@
+[
+  {
+    "type": "navigation",
+    "timestamp": 1761375120340,
+    "_received_at": 1761375120.34339
+  },
+  {
+    "type": "navigation",
+    "timestamp": 1761375126834,
+    "_received_at": 1761375126.8365839
+  },
+  {
+    "type": "navigation",
+    "timestamp": 1761375128237,
+    "_received_at": 1761375128.32372
+  },
+  {
+    "type": "navigation",
+    "timestamp": 1761375128746,
+    "_received_at": 1761375128.748091
+  },
+  {
+    "type": "navigation",
+    "timestamp": 1761375128779,
+    "_received_at": 1761375128.7817369
+  },
+  {
+    "type": "click",
+    "selector": "#username",
+    "text": "",
+    "timestamp": 1761375141098,
+    "_received_at": 1761375141.165184
+  },
+  {
+    "type": "fill",
+    "selector": "#username",
+    "value": "qa.test@appier.com",
+    "timestamp": 1761375148726,
+    "_received_at": 1761375148.733799
+  },
+  {
+    "type": "click",
+    "selector": "#password",
+    "text": "",
+    "timestamp": 1761375148734,
+    "_received_at": 1761375148.736866
+  },
+  {
+    "type": "fill",
+    "selector": "#password",
+    "value": "aaAA1234",
+    "timestamp": 1761375156340,
+    "_received_at": 1761375156.345401
+  },
+  {
+    "type": "click",
+    "selector": "button.c7ae0cd73.c91fa6616.ca65675d0.cbf0234ce.cfa6fb59c",
+    "text": "Continue",
+    "timestamp": 1761375156341,
+    "_received_at": 1761375156.347491
+  },
+  {
+    "type": "submit",
+    "selector": "form.c1f18cd4a.c322b20f2",
+    "timestamp": 1761375156343,
+    "_received_at": 1761375156.3496692
+  },
+  {
+    "type": "navigation",
+    "timestamp": 1761375156345,
+    "_received_at": 1761375156.353499
+  },
+  {
+    "type": "navigation",
+    "timestamp": 1761375160606,
+    "_received_at": 1761375169.039391
+  },
+  {
+    "type": "navigation",
+    "timestamp": 1761375176679,
+    "_received_at": 1761375176.681109
+  },
+  {
+    "type": "click",
+    "selector": "div.bp3-fill.bp3-text-overflow-ellipsis",
+    "text": "Sync",
+    "timestamp": 1761375201667,
+    "_received_at": 1761375201.669476
+  },
+  {
+    "type": "click",
+    "selector": "input.bp3-input",
+    "text": "",
+    "timestamp": 1761375209369,
+    "_received_at": 1761375209.371766
+  },
+  {
+    "type": "fill",
+    "selector": "input.bp3-input",
+    "value": "Salesforce",
+    "timestamp": 1761375217311,
+    "_received_at": 1761375217.313407
+  },
+  {
+    "type": "click",
+    "selector": "span.sc-dFkxfm.kRFRFX",
+    "text": "Sync to Salesforce",
+    "timestamp": 1761375217314,
+    "_received_at": 1761375217.3171
+  },
+  {
+    "type": "click",
+    "selector": "span.bp3-button-text",
+    "text": "Account",
+    "timestamp": 1761375237102,
+    "_received_at": 1761375237.104527
+  },
+  {
+    "type": "click",
+    "selector": "input.bp3-input",
+    "text": "",
+    "timestamp": 1761375243905,
+    "_received_at": 1761375243.909375
+  },
+  {
+    "type": "fill",
+    "selector": "input.bp3-input",
+    "value": "Contact",
+    "timestamp": 1761375253607,
+    "_received_at": 1761375253.611817
+  },
+  {
+    "type": "click",
+    "selector": "span.sc-dFkxfm.kRFRFX",
+    "text": "Contact",
+    "timestamp": 1761375253611,
+    "_received_at": 1761375253.6147149
+  },
+  {
+    "type": "click",
+    "selector": "span.bp3-button-text",
+    "text": "Add Salesforce Field",
+    "timestamp": 1761375285163,
+    "_received_at": 1761375285.165198
+  },
+  {
+    "type": "click",
+    "selector": "span.bp3-button-text",
+    "text": "Select",
+    "timestamp": 1761375293985,
+    "_received_at": 1761375293.98633
+  },
+  {
+    "type": "click",
+    "selector": "input.bp3-input",
+    "text": "",
+    "timestamp": 1761375300616,
+    "_received_at": 1761375300.6281931
+  },
+  {
+    "type": "fill",
+    "selector": "input.bp3-input",
+    "value": "Last Name",
+    "timestamp": 1761375308113,
+    "_received_at": 1761375308.1148632
+  },
+  {
+    "type": "click",
+    "selector": "span.sc-dFkxfm.kRFRFX",
+    "text": "Last Name",
+    "timestamp": 1761375308116,
+    "_received_at": 1761375308.1171598
+  },
+  {
+    "type": "click",
+    "selector": "button.bp3-button.bp3-minimal.bp3-small.sc-fMfkzZ.ctlMte",
+    "text": "",
+    "timestamp": 1761375316420,
+    "_received_at": 1761375316.422855
+  },
+  {
+    "type": "click",
+    "selector": "span.sc-dFkxfm.kRFRFX",
+    "text": "Name",
+    "timestamp": 1761375323799,
+    "_received_at": 1761375323.800725
+  },
+  {
+    "type": "click",
+    "selector": "span.bp3-button-text",
+    "text": "Add Salesforce Field",
+    "timestamp": 1761375332698,
+    "_received_at": 1761375332.698997
+  },
+  {
+    "type": "click",
+    "selector": "span.bp3-button-text",
+    "text": "Select",
+    "timestamp": 1761375339348,
+    "_received_at": 1761375339.349677
+  },
+  {
+    "type": "click",
+    "selector": "input.bp3-input",
+    "text": "",
+    "timestamp": 1761375358796,
+    "_received_at": 1761375358.7981372
+  },
+  {
+    "type": "fill",
+    "selector": "input.bp3-input",
+    "value": "Mobile Phone",
+    "timestamp": 1761375366838,
+    "_received_at": 1761375366.841131
+  },
+  {
+    "type": "click",
+    "selector": "span.sc-dFkxfm.kRFRFX",
+    "text": "Mobile Phone",
+    "timestamp": 1761375366841,
+    "_received_at": 1761375366.8444521
+  },
+  {
+    "type": "click",
+    "selector": "button.bp3-button.bp3-minimal.bp3-intent-danger",
+    "text": "",
+    "timestamp": 1761375374828,
+    "_received_at": 1761375374.8355808
+  },
+  {
+    "type": "click",
+    "selector": "span.bp3-button-text",
+    "text": "Add Salesforce Field",
+    "timestamp": 1761375382783,
+    "_received_at": 1761375382.7856052
+  },
+  {
+    "type": "click",
+    "selector": "span.bp3-button-text",
+    "text": "Select",
+    "timestamp": 1761375389704,
+    "_received_at": 1761375389.706445
+  },
+  {
+    "type": "click",
+    "selector": "input.bp3-input",
+    "text": "",
+    "timestamp": 1761375394346,
+    "_received_at": 1761375394.3511722
+  },
+  {
+    "type": "fill",
+    "selector": "input.bp3-input",
+    "value": "Mobile Phone",
+    "timestamp": 1761375402664,
+    "_received_at": 1761375402.665953
+  },
+  {
+    "type": "click",
+    "selector": "span.sc-dFkxfm.kRFRFX",
+    "text": "Mobile Phone",
+    "timestamp": 1761375402666,
+    "_received_at": 1761375402.667737
+  },
+  {
+    "type": "click",
+    "selector": "button.bp3-button.bp3-minimal.bp3-small.sc-fMfkzZ.ctlMte",
+    "text": "",
+    "timestamp": 1761375410136,
+    "_received_at": 1761375410.138936
+  },
+  {
+    "type": "click",
+    "selector": "span.sc-dFkxfm.kRFRFX",
+    "text": "phone",
+    "timestamp": 1761375417981,
+    "_received_at": 1761375417.9840279
+  },
+  {
+    "type": "click",
+    "selector": "span.bp3-button-text",
+    "text": "Add Salesforce Field",
+    "timestamp": 1761375430983,
+    "_received_at": 1761375430.9850602
+  },
+  {
+    "type": "click",
+    "selector": "span.bp3-button-text",
+    "text": "Select",
+    "timestamp": 1761375437770,
+    "_received_at": 1761375437.772307
+  },
+  {
+    "type": "click",
+    "selector": "input.bp3-input",
+    "text": "",
+    "timestamp": 1761375444358,
+    "_received_at": 1761375444.360467
+  },
+  {
+    "type": "fill",
+    "selector": "input.bp3-input",
+    "value": "Email",
+    "timestamp": 1761375455335,
+    "_received_at": 1761375455.3370721
+  },
+  {
+    "type": "click",
+    "selector": "span.sc-dFkxfm.kRFRFX",
+    "text": "Email",
+    "timestamp": 1761375455337,
+    "_received_at": 1761375455.338631
+  },
+  {
+    "type": "click",
+    "selector": "button.bp3-button.bp3-minimal.bp3-intent-danger",
+    "text": "",
+    "timestamp": 1761375465433,
+    "_received_at": 1761375465.433697
+  },
+  {
+    "type": "click",
+    "selector": "span.bp3-button-text",
+    "text": "Add Salesforce Field",
+    "timestamp": 1761375473567,
+    "_received_at": 1761375473.568515
+  },
+  {
+    "type": "click",
+    "selector": "span.bp3-button-text",
+    "text": "Select",
+    "timestamp": 1761375481247,
+    "_received_at": 1761375481.2505002
+  },
+  {
+    "type": "click",
+    "selector": "input.bp3-input",
+    "text": "",
+    "timestamp": 1761375488208,
+    "_received_at": 1761375488.210906
+  },
+  {
+    "type": "fill",
+    "selector": "input.bp3-input",
+    "value": "Email",
+    "timestamp": 1761375495917,
+    "_received_at": 1761375495.920725
+  },
+  {
+    "type": "click",
+    "selector": "span.sc-dFkxfm.kRFRFX",
+    "text": "Email",
+    "timestamp": 1761375495919,
+    "_received_at": 1761375495.922598
+  },
+  {
+    "type": "click",
+    "selector": "button.bp3-button.bp3-minimal.bp3-small.sc-fMfkzZ.ctlMte",
+    "text": "",
+    "timestamp": 1761375501033,
+    "_received_at": 1761375501.0353348
+  },
+  {
+    "type": "click",
+    "selector": "span.sc-dFkxfm.kRFRFX",
+    "text": "email",
+    "timestamp": 1761375509315,
+    "_received_at": 1761375509.3176582
+  },
+  {
+    "type": "click",
+    "selector": "span.bp3-button-text",
+    "text": "Export",
+    "timestamp": 1761375517506,
+    "_received_at": 1761375517.508512
+  },
+  {
+    "type": "navigation",
+    "timestamp": 1761375538921,
+    "_received_at": 1761375538.924321
+  }
+]
